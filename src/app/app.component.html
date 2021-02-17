@@ -1,0 +1,15 @@
+<h1>Reflective IDs</h1>
+
+<label for="switch-1">NgModel</label>
+<app-switch id="switch-1" [(ngModel)]="value"></app-switch><br />
+<strong>Value:</strong> {{value}}
+
+<br /><br />
+<hr />
+<br />
+
+<form [formGroup]="myForm" (ngSubmit)="submit()">
+  <label for="switch-2">Reactive Forms</label>
+  <app-switch id="switch-2" formControlName="mySwitch"></app-switch>
+  <button>Submit</button>
+</form>
